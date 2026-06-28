@@ -1,0 +1,106 @@
+# ============================================================
+#  GroceryPOS Pro — .gitignore
+# ============================================================
+
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+
+# ── Virtual environments ──────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ── PyInstaller ───────────────────────────────────────────
+# Keep the .spec file (needed for building)
+# Exclude PyInstaller build output
+build/
+dist/
+*.spec.bak
+
+# ── POS Runtime Data (do NOT commit) ──────────────────────
+# Database (auto-created on first run)
+data/
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# Logs
+logs/
+*.log
+
+# Backups (user-specific, can be huge)
+backups/
+*.backup
+
+# Generated reports
+reports/*.csv
+reports/*.xlsx
+reports/*.pdf
+reports/*.png
+
+# Barcode images
+reports/barcode_*.png
+
+# ── IDE / Editor ──────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Testing ───────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+nosetests.xml
+
+# ── OS ────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ── Temp / test files ─────────────────────────────────────
+*.tmp
+*.temp
+/tmp/
+test_*.db
+pos_backup_*.db
+
+# ── Keep these directories (but not their contents) ───────
+!data/.gitkeep
+!logs/.gitkeep
+!backups/.gitkeep
+!reports/.gitkeep
+!assets/.gitkeep

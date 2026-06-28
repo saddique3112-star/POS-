@@ -1,0 +1,20 @@
+# GroceryPOS Pro – Python dependencies
+# Install:  pip install -r requirements.txt
+
+# ── Core (required) ────────────────────────────────────────────────────────
+# tkinter comes bundled with Python – no pip install needed
+# sqlite3 comes bundled with Python – no pip install needed
+
+# ── Build (required for .exe) ──────────────────────────────────────────────
+pyinstaller>=6.0.0
+
+# ── Optional features ─────────────────────────────────────────────────────
+# Excel export
+openpyxl>=3.1.0
+
+# PDF export
+reportlab>=4.0.0
+
+# Barcode generation
+python-barcode>=0.15.1
+Pillow>=10.0.0
